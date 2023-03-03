@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="hamburger-menu">
+            <img class="youtube-logo" src="icons/youtube-logo.svg" alt="youtube-logo">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button">
+                <img class="search-icon" src="icons/search.svg" alt="search-icon">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="voice-search-icon">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon" src="icons/upload.svg">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="youtube-apps-icon-container">
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                <div class="tooltip">Apps</div>
+            </div>
+            <div class="notifications-icon-container">
+                <img class="notifications-icon"src="icons/notifications.svg">
+                <div class="tooltip">Notifications</div>
+                <div class="notifications-count"></div>
+            </div>
+            <img class="current-user-picture" src="img/unnamed.jpg">
+        </div>
+    </div>
+    
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img  src="icons/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img  src="icons/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img  src="icons/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img  src="icons/originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img  src="icons/youtube-music.svg">
+            <div>YouTube Music </div>
+        </div>
+        <div class="sidebar-link">
+            <img  src="icons/library.svg">
+            <div>Library</div>
+        </div>
+    </div>
+
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY"><img class="thumbnail" src="img/thumbnail-1.webp"></a>
+                <div class="video-time">
+                    14:20
+                </div>
+            </div>
+                <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="img/channel-1.jpeg" alt="channel-1">
+                </div>
+            
+                <div class="video-info">
+                    <p class="video-title">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">Talking Tech and AI with Google CEO Sundar Pichai!</a>
+                    </p>
+                    <p class="video-author">
+                        Marques Brownlee
+                    </p>
+                    <p class="video-stats">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="img/thumbnail-2.webp" alt="thumbnail-2">
+                <div class="video-time">
+                    1:14:50
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="img/channel-2.jpg" alt="channel-2">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        HTML Tutorial for Beginners: HTML Crash Course
+                    </p>
+                    <p class="video-author">          
+                        Programming with Mosh
+                    </p>
+                    <p class="video-stats">
+                      5.8M views &#183; 2 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="img/thumbnail-3.webp">
+                <div class="video-time">
+                    21:45:12
+                </div>
+            </div>
+            
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="img/channel-3.jpg" alt="channel-3">
+                </div>
+            
+                <div class="video-info">
+                    <p class="video-title">
+                        Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS)
+                    </p>
+                    <p class="video-author">
+                        freeCodeCamp.org
+                    </p>
+                    <p class="video-stats">
+                        7.32M views &#183; 6 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="img/thumbnail-4.webp" alt="thumbnail-2">
+                <div class="video-time">
+                    1:24:54
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="img/channel-4.jpg" alt="channel-4">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        JavaScript Full Course for free
+                    </p>
+                    <p class="video-author">          
+                        Bro Code
+                    </p>
+                    <p class="video-stats">
+                      1.1M views &#183; 11 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <div class="video-time">
+                    5:42:10
+                </div>
+                <img class="thumbnail" src="img/thumbnail-5.webp">
+            </div>
+            
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="img/channel-3.jpg" alt="channel-5">
+                </div>
+            
+                <div class="video-info">
+                    <p class="video-title">
+                        Full HTTP Networking Course – Fetch and REST APIs in JavaScript
+                    </p>
+                    <p class="video-author">
+                        freeCodeCamp.org
+                    </p>
+                    <p class="video-stats">
+                        298K views &#183; 1 month ago
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="img/thumbnail-6.webp" alt="thumbnail-2">
+                <div class="video-time">
+                    7:04:13
+                </div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="profile-picture" src="img/channel-3.jpg" alt="channel-2">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        System Design for Beginners Course
+                    </p>
+                    <p class="video-author">          
+                        freeCodeCamp.org
+                    </p>
+                    <p class="video-stats">
+                      347K views &#183; 1 month ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
